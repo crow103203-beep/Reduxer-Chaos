@@ -1,0 +1,55 @@
+# Gradle and generated build output
+.gradle/
+**/build/
+out/
+*.class
+
+# Local third-party dependencies; obtain from upstream
+libs/*.jar
+**/libs/*.jar
+
+# Development Minecraft instances and private player data
+run/
+run-*/
+**/run/
+**/run-*/
+saves/
+logs/
+crash-reports/
+screenshots/
+server.properties
+usercache.json
+usernamecache.json
+ops.json
+whitelist.json
+banned-*.json
+eula.txt
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+credentials.json
+local.properties
+
+# IDE and operating-system files
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+*.tmp
+
+# Packaging staging directories (review deliverables before committing)
+dist/
+_mrpack/
